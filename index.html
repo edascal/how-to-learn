@@ -10,7 +10,7 @@
   <body>
     <div class="page">
       <!--             Block Header             -->
-      <header class="header theme_light-grey">
+      <header class="header">
         <div class="logo logo_place_header"></div>
 
         <h1 class="header__title">Научиться учиться</h1>
@@ -31,12 +31,10 @@
       <!--             Block Main               -->
       <main class="content">
         <section class="description">
-          <div class="two-columns">
-            <div class="two-columns__brief">
-              <h3 class="two-columns__brief_title">
-                Главные проблемы в обучении
-              </h3>
-            </div>
+          <aside class="two-columns">
+            <h2 class="two-columns__brief_title">
+              Главные проблемы в обучении
+            </h2>
 
             <div class="two-columns__main-text">
               <p class="two-columns__paragraph">
@@ -57,12 +55,12 @@
                 техники применяются на примере обучения в Практикуме.
               </p>
             </div>
-          </div>
+          </aside>
         </section>
 
         <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
-          <h3 class="section-subtitle">Про учёбу и мозг</h3>
+          <p class="section-subtitle">Про учёбу и мозг</p>
 
           <ul class="table">
             <li class="table__cell">
@@ -74,10 +72,8 @@
               <h3 class="table__heading">2.1 миллиарда</h3>
               <p class="table__text">
                 Число нуждающихся в повышении квалификации
-                <span class="table__text table__text_copyright"
-                  >Всемирный Банк, 2017</span
-                >
               </p>
+              <p class="table__text">Всемирный Банк, 2017</p>
             </li>
 
             <li class="table__cell">
@@ -98,10 +94,8 @@
               <p class="table__text">
                 Число взрослых людей моложе 25 лет, не имеющих образования для
                 трудоустройства
-                <span class="table__text table__text_copyright"
-                  >Всемирный Банк, 2017</span
-                >
               </p>
+              <p class="table__text">Всемирный Банк, 2017</p>
             </li>
 
             <li class="table__cell">
@@ -121,10 +115,12 @@
           </ul>
         </section>
 
-        <section class="feynman theme_light-grey">
+        <section class="feynman">
           <h3 class="feynman__title">Метод Фейнмана</h3>
-          <h4 class="feynman__subtitle">Выучить и не забыть.</h4>
-          <a class="feynman__link" href="#">Подробнее &#8594;</a>
+          <p class="feynman__subtitle">Выучить и не забыть.</p>
+          <a class="feynman__link" href="#" target="_blank"
+            >Подробнее &#8594;</a
+          >
           <img
             class="feynman__image"
             alt="Фото Фейнмана"
@@ -132,9 +128,9 @@
           />
         </section>
 
-        <section class="kaufman theme_dark">
+        <section class="kaufman">
           <h2 class="section-title">Принципы обучения</h2>
-          <h3 class="section-subtitle">от Джоша Кауфмана</h3>
+          <p class="section-subtitle">от Джоша Кауфмана</p>
           <ul class="table">
             <li class="table__cell table__cell_theme_dark">
               <h3 class="table__heading">1</h3>
@@ -195,54 +191,56 @@
             </li>
           </ul>
 
-          <img
-            class="kaufman__triangle"
-            src="./images/kaufman-triangle.svg"
-            alt="Синий треугольник"
-          />
+          <div class="kaufman__triangle"></div>
         </section>
       </main>
 
       <!--             Block Footer             -->
-      <footer class="footer theme_dark">
+      <footer class="footer">
         <div class="footer__columns">
-          <div class="footer__column_content_copyright">
+          <div class="footer__column footer__column_content_copyright">
             <div class="logo logo_place_footer"></div>
-            <span class="footer__author">&copy; 2021. Даскал Евгений</span>
+            <p class="footer__author">&copy; 2021. Даскал Евгений</p>
           </div>
 
-          <div class="footer__column_content_info">
+          <nav class="footer__column footer__column_content_info">
             <h3 class="footer__column-heading">О Практикуме</h3>
             <ul class="footer__column-links">
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#">Главная</a>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Главная</a
+                >
               </li>
 
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#">Концепция</a>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Концепция</a
+                >
               </li>
 
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#">Наставники</a>
+                <a class="footer__column-link" href="#" target="_blank"
+                  >Наставники</a
+                >
               </li>
             </ul>
-          </div>
+          </nav>
 
-          <div class="footer__column_content_social">
+          <nav class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Соцсети</h3>
             <ul class="footer__column-links">
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__column-icon"
                     src="./images/facebook_color_white.svg"
-                    alt="Иконка FaceBook"
+                    alt="Иконка ФейсБук"
                   />Facebook</a
                 >
               </li>
 
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__column-icon"
                     src="./images/vk_color_white.svg"
@@ -252,16 +250,16 @@
               </li>
 
               <li class="footer__column-item">
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__column-icon"
                     src="./images/instagram_color_white.svg"
-                    alt="Иконка Instagram"
+                    alt="Иконка Инстаграм"
                   />Instagram</a
                 >
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </footer>
     </div>

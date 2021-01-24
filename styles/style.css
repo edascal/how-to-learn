@@ -1,19 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* ---------- Mixes --------- */
-
-.theme_light-grey {
-  background-color: #f2f2f2;
-}
-
-.theme_dark {
-  background-color: #1f1f1f;
-  color: white;
-}
-
 /* ---------- Page ---------- */
 
 .page {
@@ -34,14 +18,16 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 }
 
 .logo {
-  width: 185px;
+  width: 183px;
   height: 32px;
 }
 
@@ -50,19 +36,22 @@
   background-image: url(../images/logo_place_header.svg);
   top: 30px;
   left: 64px;
+  background-size: cover;
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 64px;
   z-index: 1;
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
@@ -70,6 +59,8 @@
   bottom: 30px;
   left: 64px;
   z-index: 1;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__link {
@@ -91,7 +82,7 @@
   background-color: #2f80ed;
   position: absolute;
   right: 0;
-  margin-top: -64px;
+  top: 64px;
   z-index: -1;
 }
 
@@ -112,9 +103,11 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
-  width: 175px;
+  min-width: 175px;
   margin-right: 100px;
   color: #2f80ed;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .two-columns__main-text {
@@ -122,13 +115,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .two-columns__paragraph {
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -146,17 +146,20 @@
 
 .section-title {
   width: 60%;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   font-size: 60px;
   line-height: 1.15;
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
 }
 
 .section-subtitle {
   width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   font-size: 24px;
@@ -182,14 +185,14 @@
 .table__heading {
   font-size: 24px;
   line-height: 1.15;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .table__text {
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
+  margin-top: 20px;
 }
 
 .table__text_copyright {
@@ -201,6 +204,7 @@
 
 .feynman {
   position: relative;
+  background-color: #f2f2f2;
   padding-top: 100px;
   min-height: 790px;
   z-index: 1;
@@ -208,15 +212,18 @@
 
 .feynman__title {
   width: 648px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 120px;
   line-height: 1.15;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .feynman__subtitle {
+  margin-bottom: 0;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -254,9 +261,12 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   top: 0;
   right: -210px;
@@ -280,6 +290,9 @@
   min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
+  background-color: #1f1f1f;
+  color: white;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -307,26 +320,32 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
+  height: 35px;
 }
 
 .footer__column-heading {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .footer__column-item {
   list-style: none;
-  margin-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
 }
 
+.footer__column-links {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .footer__column-link {
   color: white;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .footer__column-icon {
