@@ -4,6 +4,7 @@
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/rotation/rotation.css);
+@import url(../blocks/link/_hover/link_hover.css);
 @import url(../blocks/section/section__title.css);
 @import url(../blocks/section/section__subtitle.css);
 @import url(../blocks/two-columns/two-columns.css);
@@ -16,7 +17,6 @@
 @import url(../blocks/table/__cell/_theme_dark/table__cell_theme_dark.css);
 @import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__text/table__text.css);
-@import url(../blocks/table/__text_copyright/table__text_copyright.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/headet__title.css);
 @import url(../blocks/header/__subtitle/header__subtitle.css);
@@ -54,10 +54,6 @@
 @import url(../blocks/content/resources/resources.css);
 @import url(../blocks/content/resources/__logo-zone/resources__logo-zone.css);
 @import url(../blocks/content/resources/__logo/resources__logo.css);
-@import url(../blocks/content/resources/__logo/_arzamas/resources__logo_arzamas.css);
-@import url(../blocks/content/resources/__logo/_n1/resouces__logo_n1.css);
-@import url(../blocks/content/resources/__logo/_strelka/resources__logo_strelka.css);
-@import url(../blocks/content/resources/__logo/_polka/resources__logo_polka.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__author/footer__author.css);
@@ -65,5 +61,5 @@
 @import url(../blocks/footer/__column/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column/__column-item/footer__column-item.css);
-@import url(../blocks/footer/__column/__column-icon/footer__column-icon.css);
 @import url(../blocks/footer/__column/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
