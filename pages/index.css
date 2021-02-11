@@ -4,7 +4,7 @@
 @import url(../blocks/logo/_place/logo_place_header.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/rotation/rotation.css);
-@import url(../blocks/link/_hover/link_hover.css);
+@import url(../blocks/link/link-hover.css);
 @import url(../blocks/section/section__title.css);
 @import url(../blocks/section/section__subtitle.css);
 @import url(../blocks/two-columns/two-columns.css);
